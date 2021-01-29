@@ -38,5 +38,5 @@ function getPlayers(numberOfPlayers){
     let allPlayers = [player1, player2, player3];
 
     return allPlayers.slice(0,numberOfPlayers);
-
+   //hej 
 }
