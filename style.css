@@ -6,9 +6,15 @@ url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
     padding: 0;
 }
 
+html,body {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
 body {
-    margin: auto;
     font-family: 'Raleway', sans-serif;
+    background-image: url(img/img-background.jpg);
 }
 
 header{
