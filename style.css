@@ -1,10 +1,14 @@
-body {
-    margin: auto;
-}
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
 *{
     margin: 0;
     padding: 0;
+}
+
+body {
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 header{
@@ -53,6 +57,11 @@ nav a {
     color: #FFF;
 }
 
+nav a:hover,
+nav a:focus {
+    color:rgb(144, 151, 160)
+}
+
 .player-Info{
     position: relative;
     margin: 1.5em;
@@ -68,18 +77,22 @@ nav a {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em;
+    border-radius: 5px;
 }
 
 .player-Title{
-    padding: 2rem;
+    padding: 0.5rem;
     color: #232323;
     font-weight: 300;
     text-align: center;
+    font-size: 1.95rem;
 }
 
 .player-Age {
-    padding: 2rem;
+    padding: 0.5rem;
     color: #232323;
     font-weight: 300;
     text-align: center;
+    font-size: 1.25rem;
 }
