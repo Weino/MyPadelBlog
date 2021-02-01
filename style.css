@@ -19,14 +19,12 @@ body {
 
 header{
     background-color: #232323;
-    color: azure;
-    z-index:99;
+    color: white;
     text-align: center;
-    
 }
 
 .head-menu > div{
-    padding: 1.5em;
+    padding: 2rem;
     margin: 0;
 }
 
@@ -100,5 +98,5 @@ nav a:focus {
     color: #232323;
     font-weight: 300;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
 }
