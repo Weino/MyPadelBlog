@@ -53,10 +53,33 @@ nav a {
     color: #FFF;
 }
 
+.player-Info{
+    position: relative;
+    margin: 1.5em;
+    padding: 2.5rem;
+    
+}
+
 .player-Img {
     display: block;
     max-width:400px;
     max-height:300px;
     width: auto;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-Title{
+    padding: 2rem;
+    color: #232323;
+    font-weight: 300;
+    text-align: center;
+}
+
+.player-Age {
+    padding: 2rem;
+    color: #232323;
+    font-weight: 300;
+    text-align: center;
 }
