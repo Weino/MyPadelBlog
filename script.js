@@ -1,7 +1,8 @@
 /* Jag använder mig av en konstruktor för att kunna ha en "blueprint" för att skapa många objekt av samma typ, detta underlättar när man ska skapa många saker av en typ, då är
 det bara att lägga till en 'player', som har en viss "regel" i sig som säger att den måste ha ett "namn, efternamn, en bild och en ålder". I JS är "this" inte en variable utan
 ett "keyword". https://www.youtube.com/watch?v=Mus_vwhTCq0 är en video som förklarde bra hur man skriver sin kod smart och lätt, därifrån fick jag några ideér såsom min "player" 
-function*/
+function, ett bugg jag stötte på var att jag skrev fel ID på javascripten när jag skulle hämta min lista genom GetElementById, detta löste jag genom att felsöka min kod och 
+senare identifiera problemet när jag hade läst min kod igen. */
 
 window.addEventListener('load', () => {
 })
@@ -13,8 +14,9 @@ function Player(name, lastName, imgUrl, age) {
     this.age = age;
 }
 
+//Här uppdateras min DOM genom att trycka öka eller minska i InputBoxen. DOMen uppdateras på det vis att spelare läggs till eller tas bort beroende vilken Value som ligger i
+//InputBoxen.
 function onNumberOfPlayerChange(inputBox){
-
     const myArray = getPlayers(inputBox.value);
     console.log(inputBox.value)
        
@@ -28,8 +30,6 @@ function onNumberOfPlayerChange(inputBox){
             <p class="player-Age">Age : ${player.age} </p>
         </div>
         </li>`});        
-
-        
 
     list.innerHTML = listItems.join('')
 }
@@ -46,8 +46,6 @@ function getPlayers(numberOfPlayers){
     let player8 = new Player('Maximiliano', 'Sánchez', 'https://www.worldpadeltour.com/media-content/2016/08/Maxi-Sanchez-2-768x432.jpg', 34)
     let player9 = new Player('Franco' , 'Stupaczuk', 'https://www.worldpadeltour.com/media-content/2019/05/franco-stupaczuk-cuartos-vigo-open--774x435.jpg', 24)
     let player10 = new Player('Federico','Chingotto' , 'https://padelmagazine.fr/wp-content/uploads/2020/01/juan-tello-bandeja.jpg' , 23)
-
-
 
     let allPlayers = [player1, player2, player3, player4, player5, player6, player7, player8, player9, player10];
 
